@@ -3,3 +3,14 @@ export const generarId = () => {
     const fecha = Date.now()
     return random + fecha
 }
+
+export const formatearFecha = fecha => {
+    const fechaNueva = new Date(fecha)
+    const options = {
+        year : 'numeric',
+        month : 'long',
+        day : '2-digit'
+    }
+
+    return fechaNueva.toLocaleDateString('es-MX', options)
+}
