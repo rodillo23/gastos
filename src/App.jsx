@@ -33,7 +33,7 @@ function App() {
   }
 
   const guardarGasto = (gasto) => {
-    if(gasto.id){
+    if(gasto. id){
       //actualizar
       const gastosActualizados = gastos.map( gastoState => gastoState.id === gasto.id ? gasto : gastoState)
       setGastos(gastosActualizados)
